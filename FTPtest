@@ -1,0 +1,18 @@
+package ftp;
+
+public class FTPtest {
+	
+	public static void main(String[] args){
+		
+		
+		FTPhandler f = new FTPhandler();
+		NewClass nc = new NewClass();
+		nc.setText("testest");
+		f.writeObject("Test.ser", nc);
+		f.readObject("Test");
+		
+	}
+	
+	
+
+}
